@@ -20,12 +20,12 @@ function updateTotal(){
   // update total
     const totalValue = productPrice + extraMemoryCost + extraStorageCost + deliveryChargeTotal;
     totalPrice.innerText = totalValue;
-    // calculate total
+    // calculate grand total
     grandTotal.innerText = totalValue;
 }
 
 // promo code use
-function pomoCodeUse(percentage){
+function promoCodeUse(percentage){
     const promoInputValue = promoInput.value;
     const errorShow =document.getElementById('error-show');
     if(promoInputValue == 'stevekaku'){
@@ -33,6 +33,7 @@ function pomoCodeUse(percentage){
         grandTotal.innerText = totalPrice.innerText - discountPrice;
         errorShow.style.display='none';
     }
+    // error throw
     else {
         errorShow.style.display='block';
     }
@@ -77,7 +78,7 @@ document.getElementById('fast-delivery').addEventListener('click',function(){
 
 //handle promo code use events
 document.getElementById('apply-button').addEventListener('click',function(){
-    pomoCodeUse(20);
+    promoCodeUse(20);
     promoInput.value='';
 });
 
