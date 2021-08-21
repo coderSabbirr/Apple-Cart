@@ -1,7 +1,7 @@
  /* product images */
 .product-img img {
- height:420px;
- width: 420px;
+ height:500px;
+ width: 500px;
 }
 
 /* order summery part */
@@ -21,4 +21,3 @@
 .order-summery{
     width: 400px;
 }
-
