@@ -1,7 +1,10 @@
+ /* product images */
 .product-img img {
  height:420px;
  width: 420px;
 }
+
+/* order summery part */
 .inputflied {
     width: 400px;
 }
